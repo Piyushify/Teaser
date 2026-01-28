@@ -6,7 +6,7 @@ const canvas = document.getElementById("canvas");
 function up() {
   let y = player.offsetTop;
   if (y>10) {
-  player.style.top = (y - 10) + "px";
+  player.style.top = (y -10) + "px";
   }
 }
 

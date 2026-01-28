@@ -6,19 +6,31 @@
 #canvas {
   width: 350px;
   aspect-ratio: 1/1;
-  background: hsl(0, 0%, 25%);
+  background: hsla(0, 0%, 25%, 1);
   border: 10px solid #000;
 }
 #player {
   position: absolute;
   height: 40px;
   width: 40px;
-  background: hsla(60, 70%, 70%, 1);
+  background: yellow;
   border: 5px solid;
-  border-radius: 30%;
+  border-radius: 50%;
   left: 10px;
   top: 10px;
 }
+@keyframes eat {
+  0% {
+    border-right: 21px solid hsla(0, 0%, 25%, 1);
+  }
+  50% {
+    border-right: 21px solid yellow;
+  }
+  100% {
+    border-right: 21px solid hsla(0, 0%, 25%, 1);
+  }
+}
+
 #hider {
   position: fixed;
   display: none;
