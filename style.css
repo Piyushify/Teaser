@@ -4,10 +4,20 @@
   box-sizing: border-box;
 }
 #canvas {
-  width: 100%;
+  width: 350px;
   aspect-ratio: 1/1;
   background: hsl(0, 0%, 25%);
-  border: 50px solid #000;
+  border: 10px solid #000;
+}
+#player {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: hsla(60, 70%, 70%, 1);
+  border: 5px solid;
+  border-radius: 30%;
+  left: 10px;
+  top: 10px;
 }
 #hider {
   position: fixed;
@@ -31,12 +41,12 @@
   margin: 80px 0;
 }
 #controls button {
-  height: 200px;
-  width: 200px;
-  margin: 50px;
-  font-size: 70px;
+  height: 60px;
+  width: 60px;
+  margin: 10px;
+  font-size: 30px;
   background: hsl(0, 0%, 75%);
-  border: 15px solid #000;
+  border: 5px solid #000;
   border-radius: 40%;
 }
 #controls button:active {
