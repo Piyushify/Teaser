@@ -1,23 +1,109 @@
+:root {
+  --unit: 12vw;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+#game {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #canvas {
-  width: 350px;
+  position: absolute;
+  top: 0;
+  width: 100vw;
   aspect-ratio: 1/1;
-  background: hsla(0, 0%, 25%, 1);
-  border: 10px solid #000;
+  background: hsl(0, 0%, 25%);
+  border: 2vw solid #000;
+}
+#checkbox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: var(--unit);
+  aspect-ratio: 1/1;
+  background: hsl(0, 0%, 25%);
+  color: #000;
+  box-shadow:
+  calc(var(--unit)*1) 
+  calc(var(--unit)*0),
+  calc(var(--unit)*3) 
+  calc(var(--unit)*0),
+  calc(var(--unit)*5) 
+  calc(var(--unit)*0),
+  calc(var(--unit)*7) 
+  calc(var(--unit)*0),
+  calc(var(--unit)*0) 
+  calc(var(--unit)*1),
+  calc(var(--unit)*2)
+  calc(var(--unit)*1),
+  calc(var(--unit)*4)
+  calc(var(--unit)*1),
+  calc(var(--unit)*6)
+  calc(var(--unit)*1),
+  calc(var(--unit)*1)
+  calc(var(--unit)*2),
+  calc(var(--unit)*3)
+  calc(var(--unit)*2),
+  calc(var(--unit)*5)
+  calc(var(--unit)*2),
+  calc(var(--unit)*7)
+  calc(var(--unit)*2),
+  calc(var(--unit)*0)
+  calc(var(--unit)*3),
+  calc(var(--unit)*2)
+  calc(var(--unit)*3),
+  calc(var(--unit)*4)
+  calc(var(--unit)*3),
+  calc(var(--unit)*6)
+  calc(var(--unit)*3),
+  calc(var(--unit)*1)
+  calc(var(--unit)*4),
+  calc(var(--unit)*3)
+  calc(var(--unit)*4),
+  calc(var(--unit)*5)
+  calc(var(--unit)*4),
+  calc(var(--unit)*7)
+  calc(var(--unit)*4),
+  calc(var(--unit)*0)
+  calc(var(--unit)*5),
+  calc(var(--unit)*2)
+  calc(var(--unit)*5),
+  calc(var(--unit)*4)
+  calc(var(--unit)*5),
+  calc(var(--unit)*6)
+  calc(var(--unit)*5),
+  calc(var(--unit)*1)
+  calc(var(--unit)*6),
+  calc(var(--unit)*3)
+  calc(var(--unit)*6),
+  calc(var(--unit)*5)
+  calc(var(--unit)*6),
+  calc(var(--unit)*7)
+  calc(var(--unit)*6),
+  calc(var(--unit)*0)
+  calc(var(--unit)*7),
+  calc(var(--unit)*2)
+  calc(var(--unit)*7),
+  calc(var(--unit)*4)
+  calc(var(--unit)*7),
+  calc(var(--unit)*6)
+  calc(var(--unit)*7);
 }
 #player {
   position: absolute;
-  height: 40px;
-  width: 40px;
+  width: var(--unit);
+  aspect-ratio: 1/1;
   background: yellow;
   border: 5px solid;
   border-radius: 50%;
-  left: 10px;
-  top: 10px;
+  left: 0;
+  top: 0;
 }
 #hider {
   position: fixed;
@@ -38,7 +124,8 @@
   }
 }
 #controls {
-  margin: 80px 0;
+  position: absolute;
+  top: calc(100vw + 10vw);
 }
 #controls button {
   height: 60px;
@@ -46,7 +133,7 @@
   margin: 10px;
   font-size: 30px;
   background: hsl(0, 0%, 75%);
-  border: 5px solid #000;
+  border: 1vw solid #000;
   border-radius: 50%;
 }
 #controls button:active {
